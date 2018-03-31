@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 $( document ).ready(function() {
 
 
@@ -32,6 +32,12 @@ $( document ).ready(function() {
 		else if ($(window).scrollTop() < 150) {
 			$(".scroll-hide").fadeIn();	
 		}
+
+		if ($(window).scrollTop() > 1000) {
+			$(".skilse-cont").animate({ 'marginTop': '0', opacity: 1 }, 1000);
+			$('.pie_progress').asPieProgress('start');
+		}
+		console.log($(window).scrollTop());
 	});
 
 
@@ -76,52 +82,50 @@ $( document ).ready(function() {
 		$("html").animate({scrollTop:he}, '1000');
 	});
 
+
+
+
+
+// start pie progress--------------------------------------------------------------------//
+
+
+
+	
+	$('.pie_progress').asPieProgress({
+	namespace: 'pie_progress' ,
+	speed: 50,
+	trackcolor: '#000',
+	//easing: 'linear'
+	});
+	// Example with grater loading time - loads longer
+	$('.pie_progress--slow').asPieProgress({
+	namespace: 'pie_progress',
+	goal: 1000,
+	min: 0,
+	max: 1000,
+	speed: 200,
+	easing: 'linear'
+	});
+	// Example with grater loading time - loads longer
+	$('.pie_progress--countdown').asPieProgress({
+	namespace: 'pie_progress',
+	easing: 'linear',
+	first: 120,
+	max: 120,
+	goal: 0,
+	speed: 1200, // 120 s * 1000 ms per s / 100
+	numberCallback: function(n) {
+	  var minutes = Math.floor(this.now / 60);
+	  var seconds = this.now % 60;
+	  if (seconds < 10) {
+	    seconds = '0' + seconds;
+	  }
+	  return minutes + ': ' + seconds;
+	}
+	});
+
+	
+
+
+
 });
-
-
-=======
-var lastScrollTop = 0;
-$( window ).scroll(function() {
-	var Scroll = $(window).scrollTop(),
-		calcblur =  Scroll/100,
-		blur = "blur(" + calcblur + "px)";
-	$(".heda_blur").css("filter",blur)
-
-	if (Scroll > lastScrollTop) {
-		$(".navbar").removeClass("scroll");
-
-	}
-	else {
-		$(".navbar").addClass("scroll");
-	}
-	lastScrollTop = Scroll;
-	if ($(window).scrollTop() > 150) {
-		$(".scroll-hide").fadeOut();
-		
-
-
-	}
-	else if ($(window).scrollTop() < 150) {
-		$(".scroll-hide").fadeIn();
-		
-	}
-	if (Scroll > 450) {
-		
-	}
-  
-  console.log($(window).scrollTop());
-});
-//start typed
-var typed = new Typed('#typed', {
-    strings: ["esign","evelopment"],
-    typeSpeed: 120,
-    backSpeed: 100,
-    startDelay: 400,
-    backDelay: 2500,
-    smartBackspace: false,	
-    fadeOut: true,
-    showCursor: true,
-    loop:true,
-  });
-// end typeŹ
->>>>>>> master

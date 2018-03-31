@@ -23,11 +23,6 @@
 }
 body {
 	font-family: 'Poiret One', cursive;
-<<<<<<< HEAD
-=======
-	height:4000px;
->>>>>>> master
-  
 }
 .hrdar_father {
 position: relative;
@@ -58,11 +53,7 @@ overflow: hidden;
 .hedar .navbar {
     width: 100%;
     padding: 10PX;
-<<<<<<< HEAD
     max-height: 80px;
-=======
->>>>>>> master
-    
     z-index: 4;
 }
 .hedar .navbar .logome {
@@ -73,11 +64,7 @@ overflow: hidden;
     text-transform: uppercase;
     color: #E91E63;
     font-weight: 999;
-<<<<<<< HEAD
     text-shadow: -2px 2px 5px #000;
-
-=======
->>>>>>> master
 }
 .hedar ul {
     list-style: none;
@@ -121,29 +108,17 @@ overflow: hidden;
 
 }
 .hedar h2 {
-	 text-align: center;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-<<<<<<< HEAD
-    /*padding: 3% 5%;*/
-    font-size: 5em;
-    font-family: 'Poiret One', cursive;
-    background: rgba(0, 0, 0, 0.5);
-    transition: .2s;
-    /*box-shadow: 0 0 10PX;*/
-=======
-    padding: 3% 5%;
-    font-size: 5em;
-    font-family: 'Poiret One', cursive;
-    background: rgba(255, 255, 255, 0.5);
-    transition: .2s;
-    box-shadow: 0 0 10PX;
->>>>>>> master
-
-
-
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  font-size: 5em;
+  font-family: 'Poiret One', cursive;
+  background: rgba(0, 0, 0, 0.5);
+  transition: .2s;
+  font-size: 5em;
+  transition: .2s;
 }
 
 
@@ -152,19 +127,15 @@ overflow: hidden;
     transition: 1s;
 }
 .hedar h2 .ig {
-<<<<<<< HEAD
+
 color: #fff;
 float: left;
 letter-spacing: 5px;
-=======
-
->>>>>>> master
-
 }
 .typed-cursor {
   color: #E91E63;
   font-weight: 100;
-<<<<<<< HEAD
+
   display: none;
 }
 .hedar h2 .logo {
@@ -173,13 +144,11 @@ letter-spacing: 5px;
 	font-size: 1.2em;
   float: left;
   margin-left: 30%;
-=======
 }
 .hedar h2 .logo {
 	text-transform: uppercase;
     color: #E91E63;
 	font-size: 1.2em;
->>>>>>> master
 }
 .scroll-downs {
   position: absolute;
@@ -229,7 +198,7 @@ letter-spacing: 5px;
     margin: 0;
     padding: 0;
     box-shadow: 0 0 10PX;
-    background-image: url("imges/skilse.jpg");
+    background-image: url("imges/about-me.jpg");
     background-size: cover;
     background-attachment: fixed;
     display: -webkit-flex;
@@ -245,10 +214,7 @@ letter-spacing: 5px;
   background: url("imges/my-profile.jpg");
   background-size: contain;
   background-attachment: fixed;
-<<<<<<< HEAD
   background-repeat: no-repeat;
-=======
->>>>>>> master
   height: 80vh;
 
 }
@@ -261,11 +227,18 @@ letter-spacing: 5px;
   color: #fff;
   padding: 5% 0;
 }
-.about-me-text h2 {
+.about-me-text h2,h3 {
   font-size: 3em;
-  color: #E91E63;
+  color: #fff;
   text-transform: capitalize;
 
+}
+.about-me-text h3 {
+  color: #E91E63;
+  font-size: 2em;
+  border-bottom: 1px solid;
+  width: 90%;
+  padding: 10px 0
 }
 .about-me-text h4 {
   font-size: 1.5em;
@@ -277,8 +250,104 @@ letter-spacing: 5px;
 }
 
 
+.skilse {
+    width:100%;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 10PX;
+    background-image: url("imges/skilse.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.skilse .overlaye {
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.skilse .overlaye h3 {
+  color: #E91E63;
+  font-size: 2em;
+  border-bottom: 1px solid;
+  width: 100%;
+  padding: 10px 0
+}
+.skilse-cont {
+height: 80vh;
+margin-top: 50px;
+opacity: 0
+}
 
+.skilse ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+.skilse ul li {
+  width: 25%;
+  margin: 0;
+  float: left;
+  height: 50%;
+}
+.skilse ul li .pie_progress {
+  color: #fff;
+  width: 70%;
+  height: 70%;
+  margin: 15%;
+  border-radius: 100%;
+  background: rgba(97, 26, 40, 0.31);
+}
+.skilse ul li .pie_progress path {
+  stroke:  #E91E63;
+  stroke-width: 4px;
 
+}
+.skilse ul li .pie_progress .pie_progress__label {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-top: 50px;
 
+}
+.skilse ul li .pie_progress > i {
+  top: 15%;
+  position: absolute;
+  width: 100%;
+  font-size: 2.5em;
+}
+.skilse ul li .pie_progress .ionic {
+  top: 15%;
+  position: absolute;
+  width: 100%;
+    font-size: 2.5em;
 
+}
+.skilse ul li .pie_progress > span {
+  top: 15%;
+  position: absolute;
+  width: 100%;
+  font-size: 1.8em;
+}
+.skilse ul li .pie_progress > span span {
+    border:3px solid #95c7f9;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #95c7f9;
+    background: #090837
 
+}
+.skilse ul li .pie_progress .bootstrab {
+  padding: 1px 7px;
+  border-radius: 3px;
+  border: 1px solid;
+  color: #fff;
+  background: #563d7c
+}
