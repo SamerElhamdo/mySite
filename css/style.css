@@ -23,6 +23,10 @@
 }
 body {
 	font-family: 'Poiret One', cursive;
+<<<<<<< HEAD
+=======
+	height:4000px;
+>>>>>>> master
   
 }
 .hrdar_father {
@@ -54,7 +58,10 @@ overflow: hidden;
 .hedar .navbar {
     width: 100%;
     padding: 10PX;
+<<<<<<< HEAD
     max-height: 80px;
+=======
+>>>>>>> master
     
     z-index: 4;
 }
@@ -66,8 +73,11 @@ overflow: hidden;
     text-transform: uppercase;
     color: #E91E63;
     font-weight: 999;
+<<<<<<< HEAD
     text-shadow: -2px 2px 5px #000;
 
+=======
+>>>>>>> master
 }
 .hedar ul {
     list-style: none;
@@ -116,12 +126,21 @@ overflow: hidden;
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
+<<<<<<< HEAD
     /*padding: 3% 5%;*/
     font-size: 5em;
     font-family: 'Poiret One', cursive;
     background: rgba(0, 0, 0, 0.5);
     transition: .2s;
     /*box-shadow: 0 0 10PX;*/
+=======
+    padding: 3% 5%;
+    font-size: 5em;
+    font-family: 'Poiret One', cursive;
+    background: rgba(255, 255, 255, 0.5);
+    transition: .2s;
+    box-shadow: 0 0 10PX;
+>>>>>>> master
 
 
 
@@ -133,14 +152,19 @@ overflow: hidden;
     transition: 1s;
 }
 .hedar h2 .ig {
+<<<<<<< HEAD
 color: #fff;
 float: left;
 letter-spacing: 5px;
+=======
+
+>>>>>>> master
 
 }
 .typed-cursor {
   color: #E91E63;
   font-weight: 100;
+<<<<<<< HEAD
   display: none;
 }
 .hedar h2 .logo {
@@ -149,6 +173,13 @@ letter-spacing: 5px;
 	font-size: 1.2em;
   float: left;
   margin-left: 30%;
+=======
+}
+.hedar h2 .logo {
+	text-transform: uppercase;
+    color: #E91E63;
+	font-size: 1.2em;
+>>>>>>> master
 }
 .scroll-downs {
   position: absolute;
@@ -214,7 +245,10 @@ letter-spacing: 5px;
   background: url("imges/my-profile.jpg");
   background-size: contain;
   background-attachment: fixed;
+<<<<<<< HEAD
   background-repeat: no-repeat;
+=======
+>>>>>>> master
   height: 80vh;
 
 }
